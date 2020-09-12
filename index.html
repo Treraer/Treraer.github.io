@@ -1,18 +1,17 @@
-<!DOCTYPE html>
-
+﻿<!DOCTYPE html>
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
-</head>
+    <body>
+        <div id="vn"></div>
 
-<body>
+        <script src="ink.js"></script>
+        <!-- If you want to use audio features, you'll need to include Pizzicato -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pizzicato/0.6.4/Pizzicato.js"></script>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
-
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
-
-</body>
+        <script src="ink-vn-engine.js"></script>
+        <script type="text/javascript">
+            window.onload = function() {
+                var vn = new InkVN.VN("story.json", "vn");
+            };
+        </script>
+    </body>
 </html>
