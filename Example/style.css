@@ -9,7 +9,9 @@ p.MAP {
     line-height: 1.1;
 }
 
-
+p.STATS {
+    text_align: center;
+}
 
 
 
